@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Branded Labs</title>
+  <link rel="icon" href="favicon.png" type="image/svg+xml">
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Branded Labs</title>
+    <meta name="Branded Labs" content="Branded Labs offers specialized market-making solutions tailored towards DeFi." />
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=courier-prime:400" rel="stylesheet" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="content">
+      <h1>Branded Labs</h1>
+      <blockquote>Branded Labs offers specialized market-making solutions tailored towards DeFi.</blockquote>
+      <blockquote>Unlike their CEX counterparts, DeFi projects often lack strategic management for maintaining healthy price action. Branded Labs addresses this by providing direction and stability, essential for community sentiment and project success.</blockquote>
+      <blockquote>Due to the nature of on-chain transparency, DeFi projects face significant challenges in treasury management and token liquidations. Often causing detrimental price impact or public backlash. Branded Lab solves these issues.</blockquote>
+      <p>Get in contact <a href="https://t.me/hand_eye/" target="_blank">here</a></p>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    position: relative;
+    margin: 0;
+    background-color: black;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  .content {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+    opacity: 0;
+    animation: 1.6s fade forwards;
+    animation-delay: 3s;
+    min-width: 300px;
+    max-width: 900px; 
+    text-align: left; 
+
+    h1 {
+      font-weight: 400;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 10px 0 10px; 
+      border-left: 2px solid #5a5a5a;
+      color: #5a5a5a;
+      font-style: regular;
+      padding-left: 12px;
+      line-height: 1.7; 
+    }
+
+    p {
+      margin-top: 32px;
+    }
+
+    a {
+      color: black;
+    }
+  }
+
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(100%);
+    animation-timing-function: ease-in;
+    opacity: 0;
+    background-color: black;
+    border-radius: 100%;
+    width: 136px;
+    height: 136px;
+  }
+
+  .box1 {
+    animation: 1.7s breath forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px 0px white;
+  }
+
+  .box2 {
+    animation: 1.2s fill forwards;
+    animation-delay: 2.8s;
+    box-shadow: 0 0 5px 10px white;
+    border: 10px solid white;
+  }
+
+  @keyframes breath {
+    0% {
+      box-shadow: 0 0 5px 0px white;
+    }
+    50% {
+      box-shadow: 0 0 5px 12px white;
+      opacity: 1;
+    }
+    100% {
+      box-shadow: 0 0 5px 0px white;
+      opacity: 0;
+    }
+  }
+
+  @keyframes fill {
+    0% {
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) scale(500%);
+      opacity: 1;
+      width: 30vw;
+      height: 30vw;
+      border: 20px solid white;
+      background-color: white
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+<!-- partial -->
+  
+</body>
+</html>
